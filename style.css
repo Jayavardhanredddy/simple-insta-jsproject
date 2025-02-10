@@ -17,13 +17,15 @@ body{
 }
 #card{
     border-radius: 10px;
-    height:400px;
+    height:700px;
     width: 300px;
     background-color: white;
-    padding:30px;
+    padding: 25px;
+    padding-top: 10px;
     text-align: center;
     position:relative;
     overflow: hidden;
+
 }
 #card img{
     height: 70%;
@@ -62,4 +64,40 @@ body{
     transform:translate(-50%,-50%) scale(0);
     opacity:0;
     transition: transform ease 0.5s;
+}
+#stories{
+    height:100px;
+    width:100%;
+    padding:10px;
+    border-bottom: 1px solid #555;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#stories::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    border:3px red;
+    height: 75px;
+    width:75px;
+    border-radius: 50%;
+    border:2px solid red;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+}
+story img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+}
+#full-screen{
+   height: 100%;
+   width: 100%;
+   position: absolute; 
+   display:none;
+   background-size: cover;
+   background-position: center;
 }
